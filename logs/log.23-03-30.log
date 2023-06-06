@@ -1,0 +1,24 @@
+[2023-03-30T20:25:15.060] [ERROR] error - ReferenceError: ctx is not defined
+    at C:\Users\ZJY\Desktop\koa\manager-server\app.js:31:3
+    at dispatch (C:\Users\ZJY\Desktop\koa\manager-server\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at views (C:\Users\ZJY\Desktop\koa\manager-server\node_modules\koa-views\src\index.js:91:12)
+    at dispatch (C:\Users\ZJY\Desktop\koa\manager-server\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at serve (C:\Users\ZJY\Desktop\koa\manager-server\node_modules\koa-static\index.js:53:15)
+    at async logger (C:\Users\ZJY\Desktop\koa\manager-server\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (C:\Users\ZJY\Desktop\koa\manager-server\node_modules\koa-bodyparser\index.js:91:5)
+[2023-03-30T20:25:37.031] [ERROR] error - ReferenceError: ctx is not defined
+    at C:\Users\ZJY\Desktop\koa\manager-server\app.js:31:3
+    at dispatch (C:\Users\ZJY\Desktop\koa\manager-server\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at views (C:\Users\ZJY\Desktop\koa\manager-server\node_modules\koa-views\src\index.js:91:12)
+    at dispatch (C:\Users\ZJY\Desktop\koa\manager-server\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at serve (C:\Users\ZJY\Desktop\koa\manager-server\node_modules\koa-static\index.js:53:15)
+    at async logger (C:\Users\ZJY\Desktop\koa\manager-server\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (C:\Users\ZJY\Desktop\koa\manager-server\node_modules\koa-bodyparser\index.js:91:5)
+[2023-03-30T20:25:55.104] [ERROR] error - ReferenceError: ctx is not defined
+    at C:\Users\ZJY\Desktop\koa\manager-server\app.js:31:3
+    at dispatch (C:\Users\ZJY\Desktop\koa\manager-server\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at views (C:\Users\ZJY\Desktop\koa\manager-server\node_modules\koa-views\src\index.js:91:12)
+    at dispatch (C:\Users\ZJY\Desktop\koa\manager-server\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at serve (C:\Users\ZJY\Desktop\koa\manager-server\node_modules\koa-static\index.js:53:15)
+    at async logger (C:\Users\ZJY\Desktop\koa\manager-server\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (C:\Users\ZJY\Desktop\koa\manager-server\node_modules\koa-bodyparser\index.js:91:5)

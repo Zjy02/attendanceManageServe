@@ -1,0 +1,48 @@
+[2023-05-28T15:32:45.058] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'slice')
+    at getTreeMenu (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\routes\menus.js:21:34)
+    at C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\routes\menus.js:14:26
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\app.js:42:3
+    at async serve (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-static\index.js:53:9)
+    at async logger (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-bodyparser\index.js:91:5)
+[2023-05-28T15:32:45.072] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'slice')
+    at getTreeMenu (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\routes\menus.js:21:34)
+    at C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\routes\menus.js:14:26
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\app.js:42:3
+    at async serve (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-static\index.js:53:9)
+    at async logger (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-bodyparser\index.js:91:5)
+[2023-05-28T15:32:53.524] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'slice')
+    at getTreeMenu (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\routes\menus.js:21:34)
+    at C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\routes\menus.js:14:26
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\app.js:42:3
+    at async serve (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-static\index.js:53:9)
+    at async logger (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-bodyparser\index.js:91:5)
+[2023-05-28T15:32:53.535] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'slice')
+    at getTreeMenu (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\routes\menus.js:21:34)
+    at C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\routes\menus.js:14:26
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\app.js:42:3
+    at async serve (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-static\index.js:53:9)
+    at async logger (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-bodyparser\index.js:91:5)
+[2023-05-28T15:33:14.231] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'slice')
+    at getTreeMenu (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\routes\menus.js:21:34)
+    at C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\routes\menus.js:14:26
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\app.js:42:3
+    at async serve (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-static\index.js:53:9)
+    at async logger (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-bodyparser\index.js:91:5)
+[2023-05-28T15:33:14.243] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'slice')
+    at getTreeMenu (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\routes\menus.js:21:34)
+    at C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\routes\menus.js:14:26
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\app.js:42:3
+    at async serve (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-static\index.js:53:9)
+    at async logger (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-bodyparser\index.js:91:5)

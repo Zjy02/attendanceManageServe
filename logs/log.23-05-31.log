@@ -1,0 +1,232 @@
+[2023-05-31T00:37:48.065] [ERROR] error - ReferenceError: getTreeMenu is not defined
+    at C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\utils\util.js:66:13
+    at Array.map (<anonymous>)
+    at Object.getTreeMenu (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\utils\util.js:64:14)
+    at C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\routes\menus.js:14:31
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\app.js:45:3
+    at async serve (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-static\index.js:53:9)
+    at async logger (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-bodyparser\index.js:91:5)
+[2023-05-31T00:42:44.841] [ERROR] error - ReferenceError: jwt is not defined
+    at Object.decoded (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\utils\util.js:52:13)
+    at C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\routes\users.js:140:21
+    at dispatch (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at jwt (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-jwt\lib\index.js:73:16)
+    at async C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\app.js:45:3
+    at async serve (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-static\index.js:53:9)
+    at async logger (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-bodyparser\index.js:91:5)
+[2023-05-31T00:42:47.047] [ERROR] error - ReferenceError: jwt is not defined
+    at Object.decoded (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\utils\util.js:52:13)
+    at C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\routes\users.js:140:21
+    at dispatch (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at jwt (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-jwt\lib\index.js:73:16)
+    at async C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\app.js:45:3
+    at async serve (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-static\index.js:53:9)
+    at async logger (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-bodyparser\index.js:91:5)
+[2023-05-31T00:44:46.569] [ERROR] error - ReferenceError: jwt is not defined
+    at Object.decoded (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\utils\util.js:52:13)
+    at C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\routes\users.js:140:21
+    at dispatch (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at jwt (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-jwt\lib\index.js:73:16)
+    at async C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\app.js:45:3
+    at async serve (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-static\index.js:53:9)
+    at async logger (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-bodyparser\index.js:91:5)
+[2023-05-31T00:46:07.266] [ERROR] error - ReferenceError: jwt is not defined
+    at Object.decoded (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\utils\util.js:52:13)
+    at C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\routes\users.js:140:21
+    at dispatch (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at jwt (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-jwt\lib\index.js:73:16)
+    at async C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\app.js:45:3
+    at async serve (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-static\index.js:53:9)
+    at async logger (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-bodyparser\index.js:91:5)
+[2023-05-31T00:48:45.874] [ERROR] error - ReferenceError: jwt is not defined
+    at Object.decoded (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\utils\util.js:52:13)
+    at C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\routes\users.js:140:21
+    at dispatch (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at jwt (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-jwt\lib\index.js:73:16)
+    at async C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\app.js:45:3
+    at async serve (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-static\index.js:53:9)
+    at async logger (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-bodyparser\index.js:91:5)
+[2023-05-31T00:56:05.447] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'map')
+    at Object.getTreeMenu (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\utils\util.js:65:14)
+    at getMenuList (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\routes\users.js:153:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\routes\users.js:141:18
+    at async C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\app.js:45:3
+    at async serve (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-static\index.js:53:9)
+    at async logger (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-bodyparser\index.js:91:5)
+[2023-05-31T00:59:02.659] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'map')
+    at Object.getTreeMenu (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\utils\util.js:65:14)
+    at getMenuList (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\routes\users.js:151:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\routes\users.js:141:18
+    at async C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\app.js:45:3
+    at async serve (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-static\index.js:53:9)
+    at async logger (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-bodyparser\index.js:91:5)
+[2023-05-31T01:00:19.016] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'map')
+    at Object.getTreeMenu (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\utils\util.js:65:14)
+    at getMenuList (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\routes\users.js:152:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\routes\users.js:141:18
+    at async C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\app.js:45:3
+    at async serve (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-static\index.js:53:9)
+    at async logger (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-bodyparser\index.js:91:5)
+[2023-05-31T12:45:59.588] [ERROR] error - TypeError: rootList.map is not a function
+    at getMenuList (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\routes\users.js:152:14)
+    at C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\routes\users.js:141:24
+    at dispatch (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at jwt (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-jwt\lib\index.js:73:16)
+    at async C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\app.js:45:3
+    at async serve (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-static\index.js:53:9)
+    at async logger (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-bodyparser\index.js:91:5)
+[2023-05-31T12:48:21.260] [ERROR] error - TypeError: roleList.map is not a function
+    at getMenuList (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\routes\users.js:152:14)
+    at C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\routes\users.js:141:24
+    at dispatch (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at jwt (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-jwt\lib\index.js:73:16)
+    at async C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\app.js:45:3
+    at async serve (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-static\index.js:53:9)
+    at async logger (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-bodyparser\index.js:91:5)
+[2023-05-31T12:48:47.231] [ERROR] error - TypeError: roleList.map is not a function
+    at getMenuList (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\routes\users.js:152:14)
+    at C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\routes\users.js:141:24
+    at dispatch (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at jwt (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-jwt\lib\index.js:73:16)
+    at async C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\app.js:45:3
+    at async serve (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-static\index.js:53:9)
+    at async logger (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-bodyparser\index.js:91:5)
+[2023-05-31T12:49:43.197] [ERROR] error - TypeError: roleList.map is not a function
+    at getMenuList (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\routes\users.js:153:14)
+    at C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\routes\users.js:141:24
+    at dispatch (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at jwt (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-jwt\lib\index.js:73:16)
+    at async C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\app.js:45:3
+    at async serve (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-static\index.js:53:9)
+    at async logger (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-bodyparser\index.js:91:5)
+[2023-05-31T12:50:29.395] [ERROR] error - TypeError: roleList.map is not a function
+    at getMenuList (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\routes\users.js:153:14)
+    at C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\routes\users.js:141:24
+    at dispatch (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at jwt (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-jwt\lib\index.js:73:16)
+    at async C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\app.js:45:3
+    at async serve (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-static\index.js:53:9)
+    at async logger (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-bodyparser\index.js:91:5)
+[2023-05-31T12:52:54.847] [ERROR] error - TypeError: roleList.map is not a function
+    at getMenuList (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\routes\users.js:154:14)
+    at C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\routes\users.js:141:24
+    at dispatch (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at jwt (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-jwt\lib\index.js:73:16)
+    at async C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\app.js:45:3
+    at async serve (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-static\index.js:53:9)
+    at async logger (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-bodyparser\index.js:91:5)
+[2023-05-31T12:54:53.962] [ERROR] error - TypeError: roleList.map is not a function
+    at getMenuList (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\routes\users.js:154:14)
+    at C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\routes\users.js:141:24
+    at dispatch (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at jwt (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-jwt\lib\index.js:73:16)
+    at async C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\app.js:45:3
+    at async serve (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-static\index.js:53:9)
+    at async logger (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-bodyparser\index.js:91:5)
+[2023-05-31T12:56:28.094] [ERROR] error - TypeError: roleList.map is not a function
+    at getMenuList (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\routes\users.js:154:14)
+    at C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\routes\users.js:141:24
+    at dispatch (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at jwt (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-jwt\lib\index.js:73:16)
+    at async C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\app.js:45:3
+    at async serve (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-static\index.js:53:9)
+    at async logger (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-bodyparser\index.js:91:5)

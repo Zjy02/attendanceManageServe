@@ -1,0 +1,20 @@
+[2023-05-30T23:37:25.660] [ERROR] error - ReferenceError: getTreeMenu is not defined
+    at C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\routes\depts.js:32:9
+    at Array.map (<anonymous>)
+    at getTreeDept (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\routes\depts.js:30:10)
+    at C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\routes\depts.js:18:24
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\app.js:45:3
+    at async serve (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-static\index.js:53:9)
+    at async logger (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-bodyparser\index.js:91:5)
+[2023-05-30T23:37:50.025] [ERROR] error - ReferenceError: getTreeMenu is not defined
+    at C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\routes\depts.js:32:9
+    at Array.map (<anonymous>)
+    at getTreeDept (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\routes\depts.js:30:10)
+    at C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\routes\depts.js:18:24
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\app.js:45:3
+    at async serve (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-static\index.js:53:9)
+    at async logger (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (C:\Users\ZJY\Desktop\vue3 + koa2 + ElementPlus 后台管理系统\koa\manager-server\node_modules\koa-bodyparser\index.js:91:5)
