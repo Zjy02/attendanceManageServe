@@ -26,7 +26,7 @@ require('./config/db')
 
 // middlewares
 app.use(bodyparser({
-  enableTypes:['json', 'form', 'text']
+  enableTypes: ['json', 'form', 'text']
 }))
 
 app.use(json())
@@ -44,24 +44,24 @@ app.use(views(__dirname + '/views', {
 // logger
 app.use(async (ctx, next) => {
   const start = new Date()
-  await next().catch((err)=>{
-    if(err.status == '401'){
+  await next().catch((err) => {
+    if (err.status == '401') {
       ctx.status = 200
-      ctx.body = util.fail('token认证失败',util.CODE.AUTH_ERROR)
-    }else{
+      ctx.body = util.fail('token认证失败', util.CODE.AUTH_ERROR)
+    } else {
       throw err;
     }
   })
   const ms = new Date() - start
   console.log(`${ctx.method} ${ctx.url} - ${ms}ms`)
   log4js.info(`get params:${JSON.stringify(ctx.request.query)}`)
-  log4js.info(`post params:${JSON.stringify(ctx.request.body)})`)
+  log4js.info(`post params:${JSON.stringify(ctx.request.body)}`)
 
 
 })
 
-app.use(koajwt({secret:'zjy'}).unless({
-  path:[/^\/api\/users\/login/]
+app.use(koajwt({ secret: 'zjy' }).unless({
+  path: [/^\/api\/users\/login/]
 }))
 
 // routes

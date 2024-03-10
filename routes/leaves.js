@@ -114,7 +114,7 @@ router.post('/approve',async(ctx)=>{
   }else if(doc.auditFlows.length > doc.auditLogs.length){
     params.applyState = 2
     params.curAuditUserName = doc.auditFlows[doc.auditLogs.length+1].userName
-  }else{
+  }else if(doc.auditFlows.length > doc.auditLogs.length+1){
     params.applyState =4
   }
   }

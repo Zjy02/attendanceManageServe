@@ -9,7 +9,6 @@ const util = require('./../utils/util')
 const jwt = require('jsonwebtoken')
 router.prefix('/users')
 const md5 = require('md5')
-const { json } = require('express')
 //用户登录
 router.post('/login',async(ctx)=>{
   try {
