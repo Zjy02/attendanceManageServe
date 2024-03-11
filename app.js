@@ -15,7 +15,7 @@ const menus = require('./routes/menus')
 const roles = require('./routes/roles')
 const depts = require('./routes/depts')
 const leaves = require('./routes/leaves')
-
+const salarys = require('./routes/salarys')
 
 
 
@@ -71,6 +71,7 @@ router.use(menus.routes(), menus.allowedMethods())
 router.use(roles.routes(), roles.allowedMethods())
 router.use(depts.routes(), depts.allowedMethods())
 router.use(leaves.routes(), leaves.allowedMethods())
+router.use(salarys.routes(), salarys.allowedMethods())
 
 app.use(router.routes(), router.allowedMethods())
 
