@@ -37,6 +37,7 @@ router.post('/all/list', async (ctx) => {
   }
 })
 
+//修改个人薪资信息
 router.post('/data/update', async (ctx) => {
   const {
     userId,
@@ -188,10 +189,5 @@ router.post('/payroll/create', async (ctx) => {
   } catch (error) {
     ctx.body = util.fail(error.stack, '创建失败')
   }
-})
-
-
-router.post('/pay/detail/update', async (ctx) => {
-
 })
 module.exports = router

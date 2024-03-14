@@ -21,6 +21,10 @@ const salarySchema = mongoose.Schema({
     type: Number,
     default: 0
   }, //总请假天数
+  "allExtraTime": {
+    type: Number,
+    default: 0
+  },
   "createTime": {
     type: Date,
     default: Date.now()
