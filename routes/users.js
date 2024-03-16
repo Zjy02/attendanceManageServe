@@ -6,6 +6,10 @@ const Menu = require('./../models/menuSchema')
 const Role = require('./../models/roleSchema')
 const Counter = require('./../models/counterSchema')
 const Salary = require('./../models/salarySchema')
+const File = require('./../models/fileSchema')
+const fs = require('fs')
+const { UPLOAD_PATH } = require('../config/path')
+
 const util = require('./../utils/util')
 const jwt = require('jsonwebtoken')
 router.prefix('/users')
@@ -193,4 +197,20 @@ function getActionList(list) {
   return actionList
 }
 
+router.get('/avatar/:userId', async (ctx) => {
+  const { userId } = ctx.params
+  console.log(userId);
+  try {
+    const avatarInfo = await File.find({ userId })
+    if (!avatarInfo.length) {
+      ctx.body = util.fail('用户暂无头像', 200)
+      return
+    }
+    const { filename, mimetype } = avatarInfo[0]
+    ctx.type = mimetype
+    ctx.body = fs.createReadStream(`${UPLOAD_PATH}/${filename}`)
+  } catch (error) {
+    ctx.body = util.fail('获取头像失败', 200, error)
+  }
+})
 module.exports = router

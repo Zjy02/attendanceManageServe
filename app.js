@@ -17,6 +17,8 @@ const depts = require('./routes/depts')
 const leaves = require('./routes/leaves')
 const salarys = require('./routes/salarys')
 const registration = require('./routes/registrated')
+const uploadFile = require('./routes/uploadFile')
+const bodyParser = require('koa-bodyparser')
 
 
 
@@ -33,7 +35,7 @@ app.use(bodyparser({
 app.use(json())
 app.use(logger())
 app.use(require('koa-static')(__dirname + '/public'))
-
+app.use(bodyParser())
 app.use(views(__dirname + '/views', {
   extension: 'pug'
 }))
@@ -62,7 +64,7 @@ app.use(async (ctx, next) => {
 })
 
 app.use(koajwt({ secret: 'zjy' }).unless({
-  path: [/^\/api\/users\/login/]
+  path: [/^\/api\/users\/login/, /^\/api\/users\/avatar/]
 }))
 
 // routes
@@ -74,7 +76,7 @@ router.use(depts.routes(), depts.allowedMethods())
 router.use(leaves.routes(), leaves.allowedMethods())
 router.use(salarys.routes(), salarys.allowedMethods())
 router.use(registration.routes(), registration.allowedMethods())
-
+router.use(uploadFile.routes(), uploadFile.allowedMethods())
 
 app.use(router.routes(), router.allowedMethods())
 
