@@ -1,49 +1,49 @@
 const mongoose = require('mongoose')
 
 const leaveSchema = mongoose.Schema({
-    orderNo:String,
-    applyType:Number,
-    startTime:{
-        type: Date,
-        default:Date.now()
+    orderNo: String,
+    applyType: Number,
+    startTime: {
+        type: String,
+        default: Date.now()
     },
-    endTime:{
-        type: Date,
-        default:Date.now()
+    endTime: {
+        type: String,
+        default: Date.now()
     },
-    applyUser:{
-        userId:String,
-        userName:String,
-        userEmail:String
+    applyUser: {
+        userId: String,
+        userName: String,
+        userEmail: String
     },
-    leaveTime:String,
-    reasons:String,
-    auditUsers:String,
-    curAuditUserName:String,
-    auditFlows:[
+    leaveTime: String,
+    reasons: String,
+    auditUsers: String,
+    curAuditUserName: String,
+    auditFlows: [
         {
-            userId:String,
-            userName:String,
-            userEmail:String
+            userId: String,
+            userName: String,
+            userEmail: String
         }
     ],
-    auditLogs:[
+    auditLogs: [
         {
-            userId:String,
-            userName:String,
-            createTime:Date,
-            remark:String,
-            action:String 
+            userId: String,
+            userName: String,
+            createTime: Date,
+            remark: String,
+            action: String
         }
     ],
-    applyState:{
+    applyState: {
         type: Number,
-        default:1
+        default: 1
     },
-    createTime:{
+    createTime: {
         type: Date,
-        default:Date.now()
+        default: Date.now()
     }
 })
 
-module.exports = mongoose.model("leaves",leaveSchema,"leaves") //第三个参数值集合的名称
+module.exports = mongoose.model("leaves", leaveSchema, "leaves") //第三个参数值集合的名称

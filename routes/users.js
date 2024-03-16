@@ -26,7 +26,7 @@ router.post('/login', async (ctx) => {
     const res = await User.findOne({
       userName,
       userPwd: md5(userPwd)
-    }, 'userId userName userEmail state role deptId roleList')
+    }, 'userId userName userEmail state role deptId roleList avatar')
     const data = res._doc
     const token = jwt.sign({
       data

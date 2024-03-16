@@ -7,6 +7,7 @@ const util = require('../utils/util')
 router.prefix('/leaves')
 const { pager } = require('../utils/util')
 const { create } = require('../models/leaveSchema')
+const dayjs = require('dayjs')
 
 
 //查询申请列表
@@ -18,7 +19,7 @@ router.get('/list', async (ctx) => {
   try {
     let params = {}
     if (type == 'approve') {
-      if (04 == 1 || applyState == 2) {
+      if (applyState == 1 || applyState == 2) {
         params.curAuditUserName = data.userName
         params.$or = [{ applyState: 1 }, { applyState: 2 }]
       } else if (applyState > 2) {
@@ -66,7 +67,7 @@ router.post('/operate', async (ctx) => {
     //查找负责人信息
     let dept = await Dept.findById(id)
     //获取人事部和财务部门的负责人
-    let userList = await Dept.find({ deptName: { $in: ['人事部门', '财务部门'] } })
+    let userList = await Dept.find({ deptName: { $in: ['人力资源', '财务部门'] } })
     let auditUsers = dept.userName
     let auditFlows = [
       { userId: dept.userId, userName: dept.userName, userEmail: dept.userEmail }
@@ -86,6 +87,9 @@ router.post('/operate', async (ctx) => {
       userName: data.userName,
       userEmail: data.userEmail
     }
+    params.startTime = dayjs(params.startTime).format('YYYY-MM-DD HH-mm-ss')
+    params.endTime = dayjs(params.endTime).format('YYYY-MM-DD HH-mm-ss')
+
     console.log("修改后的=》", params)
     let res = await Leave.create(params)
     ctx.body = util.success("", "创建成功")
