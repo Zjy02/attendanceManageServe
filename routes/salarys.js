@@ -47,7 +47,6 @@ router.post('/data/update', async (ctx) => {
     allLeaveDays,
     remark
   } = ctx.request.body
-  console.log(ctx.request.body);
   if (!userId) {
     ctx.body = util.fail('用户ID不能为空')
     return
@@ -94,7 +93,6 @@ router.post('/payroll/update', async (ctx) => {
     remark,
     punishmentDescribe
   } = ctx.request.body
-  console.log(ctx.request.body);
   if (!userId) {
     ctx.body = util.fail('用户ID不能为空')
     return

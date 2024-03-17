@@ -33,7 +33,6 @@ router.get('/list', async (ctx) => {
       }
       if (applyState && applyState != 0) params.applyState = applyState
     }
-    console.log("this is applystate", applyState, typeof applyState)
     const query = Leave.find(params)
     const list = await query.skip(skipIndex).limit(page.pageSize)
     const total = await Leave.countDocuments(params)
@@ -52,7 +51,6 @@ router.get('/list', async (ctx) => {
 
 router.post('/operate', async (ctx) => {
   let { _id, action, ...params } = ctx.request.body
-  console.log("params=>", params)
   let authorization = ctx.request.headers.authorization
   let { data } = util.decoded(authorization)
 
@@ -90,7 +88,6 @@ router.post('/operate', async (ctx) => {
     params.startTime = dayjs(params.startTime).format('YYYY-MM-DD HH-mm-ss')
     params.endTime = dayjs(params.endTime).format('YYYY-MM-DD HH-mm-ss')
 
-    console.log("修改后的=》", params)
     let res = await Leave.create(params)
     ctx.body = util.success("", "创建成功")
   } else {

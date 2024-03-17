@@ -22,11 +22,10 @@ router.post('/login', async (ctx) => {
     //1 ,'userId userName userEmail state role deptId roleList'
     //2 ,{userId: 1,_id:0} (1为返回 0为不返回)
     //3 .select(''userId)
-    console.log("password", userPwd)
     const res = await User.findOne({
       userName,
       userPwd: md5(userPwd)
-    }, 'userId userName userEmail state role deptId roleList avatar')
+    }, 'userId userName userEmail state role deptId roleList avatar job')
     const data = res._doc
     const token = jwt.sign({
       data
@@ -199,7 +198,6 @@ function getActionList(list) {
 
 router.get('/avatar/:userId', async (ctx) => {
   const { userId } = ctx.params
-  console.log(userId);
   try {
     const avatarInfo = await File.find({ userId })
     if (!avatarInfo.length) {

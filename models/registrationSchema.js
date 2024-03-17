@@ -10,15 +10,15 @@ const registrationSchema = mongoose.Schema({
     default: ''
   },
   "location": {
-    type: String,
-    default: ''
+    type: Array,
+    default: []
   }, //打卡位置
   "workStartTime": {
     type: String,
     default: ""
   },//上班卡
   "workEndTime": {
-    type: Date,
+    type: String,
     default: ""
   }, //下班卡
   "extraTime": {
@@ -49,6 +49,14 @@ const registrationSchema = mongoose.Schema({
     type: String,
     default: ""
   }, //早退原因
+  "endLocationName": {
+    type: String,
+    default: ""
+  },//上班签到地址
+  "startLocationName": {
+    type: String,
+    default: ""
+  },//下班签到地址
   "createTime": {
     type: Date,
     default: Date.now()

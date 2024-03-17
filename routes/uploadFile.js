@@ -18,7 +18,6 @@ router.prefix('/file')
 router.post('/avatar', uploadAvatar.single('avatar'), async (ctx) => {
   const { filename, mimetype, size } = ctx.request.file
   const { userId } = ctx.request.body
-  console.log(ctx.request.file);
   try {
     const result = await User.find({ userId })
     if (!result.length) {
