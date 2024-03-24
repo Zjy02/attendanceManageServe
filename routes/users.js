@@ -25,7 +25,7 @@ router.post('/login', async (ctx) => {
     const res = await User.findOne({
       userName,
       userPwd: md5(userPwd)
-    }, 'userId userName userEmail state role deptId roleList avatar job')
+    }, 'userId userName userEmail realName state role deptId roleList avatar sex job age createTime')
     const data = res._doc
     const token = jwt.sign({
       data
@@ -88,7 +88,7 @@ router.post('/delete', async (ctx) => {
 
 //用户新增/编辑
 router.post('/operate', async (ctx) => {
-  const { userId, userName, userEmail, job, state, mobile, roleList, deptId, action } = ctx.request.body
+  const { userId, userName, realName, userEmail, job, sex, age, state, mobile, roleList, deptId, action } = ctx.request.body
   if (action == 'add') {
     if (!userName || !userEmail || !deptId) {
       ctx.body = util.fail("参数错误", util.CODE.PARAM_ERROR)
@@ -110,7 +110,10 @@ router.post('/operate', async (ctx) => {
           job,
           state,
           deptId,
-          mobile
+          mobile,
+          sex,
+          age,
+          realName
         })
         const salary = new Salary({
           userId: doc.sequence_value
@@ -129,7 +132,7 @@ router.post('/operate', async (ctx) => {
       return
     }
     try {
-      const res = await User.findOneAndUpdate({ userId }, { job, state, mobile, roleList, deptId })
+      const res = await User.findOneAndUpdate({ userId }, { job, state, mobile, roleList, deptId, userName, sex, age, userEmail, realName })
       ctx.body = util.success({}, "更新成功")
       return
     } catch (error) {
@@ -142,7 +145,7 @@ router.post('/operate', async (ctx) => {
 //获取全部用户列表
 router.get('/all/list', async (ctx) => {
   try {
-    const list = await User.find({}, "userId userName userEmail")
+    const list = await User.find({}, "userId userName userEmail realName")
     ctx.body = util.success(list)
   } catch (error) {
     ctx.body = util.fail(error.stack)
@@ -210,5 +213,14 @@ router.get('/avatar/:userId', async (ctx) => {
   } catch (error) {
     ctx.body = util.fail('获取头像失败', 200, error)
   }
+})
+
+router.post('/userInfo/get', async (ctx) => {
+  let authorization = ctx.request.headers.authorization
+  //对token进行解密 拿到用户的角色信息
+  let { data } = util.decoded(authorization)
+  const userId = data.userId
+  const userInfo = await User.find({ userId })
+  ctx.body = util.success(userInfo[0], '查询成功')
 })
 module.exports = router

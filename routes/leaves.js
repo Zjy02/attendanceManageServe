@@ -3,7 +3,10 @@
 const router = require('koa-router')()
 const Leave = require('../models/leaveSchema')
 const Dept = require('../models/deptSchema')
+const User = require('../models/userSchema')
 const util = require('../utils/util')
+const Salary = require('./../models/salarySchema')
+const SalaryList = require('./../models/salaryListSchema')
 router.prefix('/leaves')
 const { pager } = require('../utils/util')
 const { create } = require('../models/leaveSchema')
@@ -50,7 +53,7 @@ router.get('/list', async (ctx) => {
 })
 
 router.post('/operate', async (ctx) => {
-  let { _id, action, ...params } = ctx.request.body
+  let { _id, action, userId, ...params } = ctx.request.body
   let authorization = ctx.request.headers.authorization
   let { data } = util.decoded(authorization)
 
@@ -63,10 +66,12 @@ router.post('/operate', async (ctx) => {
     //获取用户当前部门Id
     let id = data.deptId.pop()
     //查找负责人信息
-    let dept = await Dept.findById(id)
+    const userInfo = await User.find({ userId })
+    let dept = await Dept.findById(userInfo[0].deptId.pop())
+
     //获取人事部和财务部门的负责人
-    let userList = await Dept.find({ deptName: { $in: ['人力资源', '财务部门'] } })
-    let auditUsers = dept.userName
+    let userList = await Dept.find({ deptName: { $in: ['人力资源'] } })
+    let auditUsers = dept?.userName
     let auditFlows = [
       { userId: dept.userId, userName: dept.userName, userEmail: dept.userEmail }
     ]
@@ -83,12 +88,14 @@ router.post('/operate', async (ctx) => {
     params.applyUser = {
       userId: data.userId,
       userName: data.userName,
-      userEmail: data.userEmail
+      userEmail: data.userEmail,
+      realName: data.realName
     }
-    params.startTime = dayjs(params.startTime).format('YYYY-MM-DD HH-mm-ss')
-    params.endTime = dayjs(params.endTime).format('YYYY-MM-DD HH-mm-ss')
+    params.startTime = dayjs(params.startTime).format('YYYY-MM-DD HH:mm:ss')
+    params.endTime = dayjs(params.endTime).format('YYYY-MM-DD HH:mm:ss')
 
-    let res = await Leave.create(params)
+    let res =  new Leave(params)
+    await res.save()
     ctx.body = util.success("", "创建成功")
   } else {
     let res = await Leave.findByIdAndUpdate(_id, { applyState: 5 })
@@ -100,23 +107,44 @@ router.post('/operate', async (ctx) => {
 router.post('/approve', async (ctx) => {
   const { action, remark, _id } = ctx.request.body
   let authorization = ctx.request.headers.authorization
-  let data = util.decoded(authorization)
+  let res = util.decoded(authorization)
+  const data = res.data
   let params = {}
   try {
     let doc = await Leave.findById(_id)
     let auditLogs = doc.auditLogs || []
+    if (doc.applyState == 3) {
+      ctx.body = util.fail("当前申请单被驳回，请勿重复提交")
+      return
+    }
+    if (doc.auditLogs.some(item => item.userId === data.userId)) {
+      ctx.body = util.fail("当前申请已处理，请勿重复提交")
+      return
+    }
     if (action == 'refuse') {
       params.applyState = 3
     } else {
       //审核通过
-      if (doc.auditFlows.length == doc.auditLogs.length) {
-        ctx.body = util.success("当前申请单已处理，请勿重复提交")
-        return
-      } else if (doc.auditFlows.length > doc.auditLogs.length) {
+      if (doc.auditFlows.length > doc.auditLogs.length + 1) {
         params.applyState = 2
-        params.curAuditUserName = doc.auditFlows[doc.auditLogs.length + 1].userName
-      } else if (doc.auditFlows.length > doc.auditLogs.length + 1) {
+        params.curAuditUserName = doc.auditFlows[doc.auditLogs.length + 1]?.userName || ''
+      } else if (doc.auditFlows.length >= doc.auditLogs.length + 1) {
         params.applyState = 4
+        const p = { examineDate: dayjs().format('YYYY/MM'), userId: doc.applyUser.userId }
+        const salarys = await SalaryList.find(p)
+        if (salarys.length) {
+          await SalaryList.updateMany(p, { $set: { leaveDays: doc.leaveTime } })
+        } else {
+          const result = await Salary.find({ userId: doc.applyUser.userId })
+          const salaryInfo = result[0]
+          const newData = new SalaryList({
+            userId: doc.applyUser.userId,
+            realName: doc.applyUser.realName,
+            tax: salaryInfo?.tax,
+            basicSalary: salaryInfo?.basicSalary,
+          })
+          await newData.save()
+        }
       }
     }
     auditLogs.push({
@@ -130,7 +158,7 @@ router.post('/approve', async (ctx) => {
     let res = await Leave.findByIdAndUpdate(_id, params)
     ctx.body = util.success("", "处理成功")
   } catch (error) {
-    ctx.body = util.fail(`创建失败,${error.message}`)
+    ctx.body = util.fail(`处理失败,${error.message}`)
   }
 })
 

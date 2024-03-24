@@ -21,6 +21,10 @@ const registrationSchema = mongoose.Schema({
     type: String,
     default: ""
   }, //下班卡
+  "realName": {
+    type: String,
+    default: ""
+  },
   "extraTime": {
     type: Number,
     default: 0

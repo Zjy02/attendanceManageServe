@@ -14,7 +14,8 @@ const leaveSchema = mongoose.Schema({
     applyUser: {
         userId: String,
         userName: String,
-        userEmail: String
+        userEmail: String,
+        realName: String
     },
     leaveTime: String,
     reasons: String,

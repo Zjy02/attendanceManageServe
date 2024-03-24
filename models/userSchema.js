@@ -11,6 +11,7 @@ const userSchema = mongoose.Schema({
     "sex": Number,       //性别 男：0 女：1
     "deptId": [],        //部门
     "job": String,       //岗位
+    "age": Number,       //年龄
     "state": {
         type: Number,
         default: 1

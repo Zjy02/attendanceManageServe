@@ -64,6 +64,9 @@ router.post('/sign/start', async (ctx) => {
 //晚签
 router.post('/sign/end', async (ctx) => {
   const { userId, location, earlyReason, endLocationName } = ctx.request.body
+  let authorization = ctx.request.headers.authorization
+  let res = util.decoded(authorization)
+  const data = res.data
   try {
     const user = await User.find({ userId });
     if (!user.length) {
@@ -98,6 +101,7 @@ router.post('/sign/end', async (ctx) => {
       extraTime = Number(diff)
     }
     const newField = {
+      realName: data.realName,
       location,
       earlyReason,
       earlyTime,
@@ -120,8 +124,22 @@ router.post('/sign/query', async (ctx) => {
   const { userId, time } = ctx.request.body
   try {
     const result = await Registration.find({ userId, today: time });
-    console.log(result);
     ctx.body = util.success(result[0], 'success')
+  } catch (error) {
+    ctx.body = util.fail(`查询失败${error}`)
+  }
+})
+
+router.post('/sign/all/query', async (ctx) => {
+  const { userId, time } = ctx.request.body
+  try {
+    let result = await Registration.find({ userId });
+    if (result.length && time) {
+      result = result.filter(item => {
+        return item.today === time
+      })
+    }
+    ctx.body = util.success({ recrods: result }, 'success')
   } catch (error) {
     ctx.body = util.fail(`查询失败${error}`)
   }

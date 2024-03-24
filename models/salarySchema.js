@@ -21,6 +21,14 @@ const salarySchema = mongoose.Schema({
     type: Number,
     default: 0
   }, //总请假天数
+  "tax": {
+    type: Number,
+    default: 0
+  }, //税务
+  "annualBonus": {
+    type: Number,
+    default: 0
+  }, //年终奖
   "allExtraTime": {
     type: Number,
     default: 0

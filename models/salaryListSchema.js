@@ -1,16 +1,20 @@
+const dayjs = require('dayjs')
 const mongoose = require('mongoose')
-const d = new Date()
 
 const salaryListSchema = mongoose.Schema({
   "userId": Number,    //用户ID
   "examineDate": {
     type: String,
-    default: [d.getFullYear(), d.getDate()].join('/')
+    default: dayjs().format('YYYY/MM')
   }, //考核年月份
   "penalty": {
     type: Number,
     default: 0
   }, //罚款
+  "realName": {
+    type: String,
+    default: ""
+  },
   "realWorkDays": {
     type: Number,
     default: 0
@@ -23,22 +27,18 @@ const salaryListSchema = mongoose.Schema({
     type: Number,
     default: 0
   }, //当月奖金
-  "tax": {
-    type: Number,
-    default: 0
-  }, //税务
-  "annualBonus": {
-    type: Number,
-    default: 0
-  }, //年终奖
   "basicSalary": {
     type: Number,
     default: 0
   }, //底薪
-  "eaveDays": {
+  "leaveDays": {
     type: Number,
     default: 0
   },//当月请假天数
+  "tax": {
+    type: Number,
+    default: 0
+  }, //税务
   "createTime": {
     type: Date,
     default: Date.now()
